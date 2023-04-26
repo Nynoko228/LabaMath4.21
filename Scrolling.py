@@ -8,10 +8,7 @@ class ScrollableImage(tkinter.Frame):
         self.cnvs = tkinter.Canvas(self, highlightthickness=0, **kw)
         # print(len(self.image))
         for i in range(len(self.image)):
-            self.cnvs.create_image(10, (10+100*i), anchor='nw', image=self.image[i])
-
-        # self.cnvs.create_image(0, 0, anchor='nw', image=self.image[0])
-        # self.cnvs.create_image(0, 70, anchor='nw', image=self.image[1])
+            self.cnvs.create_image(10, (10 + 100 * i), anchor='nw', image=self.image[i])
         # Vertical and Horizontal scrollbars
         self.v_scroll = tkinter.Scrollbar(self, orient='vertical', width=sw)
         self.h_scroll = tkinter.Scrollbar(self, orient='horizontal', width=sw)
